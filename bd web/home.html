@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Htun Htun Aung's birthday</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="birthday.css">
+    <link rel="icon" href="celebrate.webp">
+</head>
+<style>
+    body {
+  margin: 0;
+  font-family: sans-serif;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('dottedwallpaper.jpg');
+  filter: blur(4px);
+  z-index: -1; /* put it behind the content */
+}
+
+</style>
+<body>
+<div id="homediv">
+    <div class="w-[150px] transform hover:scale-[1.25] mb-5 duration-300 ">
+        <img src="cake.png" >
+    </div>
+    <p class="text-[26px] font-bold font-[cursive] mt-4 flex justify-center align-center bg-gradient-to-r from-[#EE839568] via-pink-100 to-pink-300 text-transparent bg-clip-text animate-bounce ">Happy Birthday my pookie!</p>
+    <p class="text-[16px] font-[cursive] mt-4 transform hover:scale-110 transition duration-300 ">click this buttonꉂ(˵˃ ᗜ ˂˵)</p>
+
+    <div class="font-[cursive] ">
+        <button id="homeBtn" class="px-6 py-3  rounded-full mt-6 shadow-[0_0_28px_3px_#EE839568]  bg-gradient-to-r from-[#EE839568] via-white to-[#EE839568]
+        transform hover:scale-[1.25] hover:from-white hover:via-[#EE839568] hover:to-white transition duration-300
+        " 
+        >
+        Next &#x1F497
+    </button>
+    </div>
+</div>
+   
+<script type="module">
+    document.getElementById("homeBtn").addEventListener("click" ,()=>
+{
+   window.location.href = 'option.html';
+});
+
+
+
+// Import Firebase SDK
+    import { initializeApp } 
+      from "https://www.gstatic.com/firebasejs/12.1.0/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } 
+      from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
+    import { getAnalytics } 
+      from "https://www.gstatic.com/firebasejs/12.1.0/firebase-analytics.js";
+
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyB7b5eRcuuXwJx-9djn0eYy-Nefiz3kvno",
+      authDomain: "fir-auth-5e191.firebaseapp.com",
+      projectId: "fir-auth-5e191",
+      storageBucket: "fir-auth-5e191.appspot.com",
+      messagingSenderId: "973104091132",
+      appId: "1:973104091132:web:45bdc760112772e9446c79",
+      measurementId: "G-WC7JKWSS5M"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    try { 
+      getAnalytics(app); 
+    } catch(e) { 
+      console.warn("Analytics not supported locally."); 
+    }
+
+</script>
+
+</body>
+</html>

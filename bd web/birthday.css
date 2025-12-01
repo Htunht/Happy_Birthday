@@ -1,0 +1,58 @@
+#homeBtn
+{
+    box-shadow: 0 0 25px 3px rgba(238, 131, 149, 0.406);
+    
+}
+
+body
+{
+    background-color: #ffd1d3;
+}
+
+#hometext
+{
+    -webkit-text-stroke: 1px #000000;
+  
+}
+
+#letter
+{
+    background-color: rgb(252, 247, 234);
+    width: 60vw;
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 29px 4px rgba(233, 162, 174, 0.693);
+    
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+   font-family: cursive;
+   
+   padding: 20px;
+   color: rgb(194, 78, 78);
+    
+
+}
+
+#homediv
+{
+    background-color: white;
+    width: 60vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 40px;
+    box-shadow: 0 0 28px 4px rgb(244, 156, 171);
+
+
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body
+    {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        min-height: 100vh;
+    }
+
+    body::before
+    {
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        position: fixed;
+        background-image: url(cloud.jpg);
+    }
+</style>
+<body>
+
+    <!-- vinyl -->
+    <div id="vinyl" class="bg-white w-[40vw] h-[70vh] rounded-[40px] flex  justify-center items-center shadow-[0_0_28px_4px_rgb(244_156_171)]  ">
+    <div class="flex flex-col items-center justify-center ">
+    <p class="mb-10 font-bold font-[cursive] text-[26px] bg-gradient-to-r from-[rgba(233,162,174,0.7)] via-pink-200 via-pink-300 to-[rgba(233,162,174,0.7)] text-transparent bg-clip-text">Click the vinyl ( ˶˘ ³˘)♡</p>
+    
+    <div class="relative w-[250px]">
+  <img src="vinylplayer.jpg" class="w-full">
+  
+  <!-- need separate div for anime spin bc it keep colliding with different translate tags -->
+  <div class="absolute top-1/2 left-[55%] -translate-x-1/2 -translate-y-1/2 w-[180px]">
+    <img src="vinyl.webp" class="w-[180px] animate-spin hover:[animation-play-state:paused] ">
+  </div>
+</div>
+
+
+    </div>
+</div>
+
+
+
+    
+
+
+    <script>
+       document.getElementById("vinyl").addEventListener("click",()=>
+    {
+       window.location.href = "video.html";
+    });
+
+    </script>
+</body>
+</html>

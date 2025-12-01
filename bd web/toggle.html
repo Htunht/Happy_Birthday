@@ -1,0 +1,39 @@
+<img id="pic1" src="image.jpg" alt="picture" width="150" />
+
+<div id="infoBox" style="display: none; background: white; padding: 10px">
+  Hello, I’m now visible!
+</div>
+
+<script>
+  const img = document.getElementById("pic1");
+  const box = document.getElementById("infoBox");
+
+  img.addEventListener("click", () => {
+    // Toggle the div visibility
+    if (box.style.display === "none") {
+      box.style.display = "block";
+    } else {
+      box.style.display = "none";
+    }
+  });
+</script>
+
+//toggle
+<img id="pic1" src="image.jpg" alt="picture" width="150" />
+
+<div id="infoBox" class="hidden bg-white p-2 w-[100px]">Hello!</div>
+
+<style>
+  .hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  const img = document.getElementById("pic1");
+  const box = document.getElementById("infoBox");
+
+  img.addEventListener("click", () => {
+    box.classList.toggle("hidden");
+  });
+</script>

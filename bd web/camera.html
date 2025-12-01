@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camera</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        
+       
+    </style>
+</head>
+<body class="bg-gradient-to-r from-[#EE839568] via-pink-100 via-white to-[#EE839568]">
+    <div class="flex flex-col justify-center items-center">
+      
+      <div class="bg-[#EE839568] w-[50vw] mt-6 px-5 py-2 flex justify-center items-center shadow-[5px_5px_0_rgba(194,78,78,0.51)] mb-10 ">
+          <p class="text-white text-[20px] ">⋆｡‧˚ʚ🍓ɞ˚‧｡⋆</p>
+          <p class="text-[25px] font-bold font-[Mono] text-white  ">
+          List of my most favorite pics of you  </p>
+          <p class="text-white text-[20px] ">⋆｡‧˚ʚ🍓ɞ˚‧｡⋆</p>
+      </div>
+
+    <div id="container" class="flex flex-col w-full mt-6 ">
+        
+      <!-- pic 1 -->
+      <div class="flex items-center">
+         <img src="babe1.jpg" class="w-[150px] transform -rotate-12 mt-6 mb-10 shadow-[0_0_28px_4px_rgba(194,78,78,0.51)]" id="pic1">
+         
+         <div >
+            <img src="arrow.webp" class="w-[30px] -rotate-45 transform hover:scale-[1.5] transition duration-300" >
+            <p class="font-[cursive] mx-[40px] bg-gradient-to-r from-[#C24E4E] via-pink-400 via-pink-400 to-[#C24E4E] text-transparent bg-clip-text transform animate-bounce">click the pic to see what happens⸜(｡˃ ᵕ ˂ )⸝♡  </p>
+            </div>
+      </div>
+
+
+
+<!-- pic 2 -->
+<div class="flex items-center">
+    
+    <img src="babe2.jpg" class="w-[150px] transform rotate-12 mt-6 ml-auto shadow-[0_0_28px_4px_rgba(194,78,78,0.51)]" id="pic2">
+    <img src="arrow.webp" class="w-[30px] -rotate-45 transform hover:scale-[1.5] transition duration-300" >
+    <p class="font-[cursive] mt-[70px] bg-gradient-to-r from-[#C24E4E] via-pink-400 via-pink-400 to-[#C24E4E] text-transparent bg-clip-text transform animate-bounce ">click the pic to see what happens⸜(｡˃ ᵕ ˂ )⸝♡  </p>
+    
+</div>
+        
+        <!-- pic 3 -->
+        <div class="flex items-center mt-8">
+         <img src="babe3.jpg" class="w-[150px] transform -rotate-12 mt-6 mb-10 shadow-[0_0_28px_4px_rgba(194,78,78,0.51)]" id="pic3">
+         
+         <div >
+            <img src="arrow.webp" class="w-[30px] -rotate-45 transform hover:scale-[1.5] transition duration-300" >
+            <p class="font-[cursive] mx-[40px] bg-gradient-to-r from-[#C24E4E] via-pink-400 via-pink-400 to-[#C24E4E] text-transparent bg-clip-text transform animate-bounce">click the pic to see what happens⸜(｡˃ ᵕ ˂ )⸝♡  </p>
+            </div>
+      </div>
+
+        
+
+
+        <!-- pic 4 -->
+        <div class="flex items-center mt-4">
+    
+    <img src="babe4.jpg" class="w-[150px] transform rotate-12 mt-6 ml-auto shadow-[0_0_28px_4px_rgba(194,78,78,0.51)]" id="pic4">
+    <img src="arrow.webp" class="w-[30px] -rotate-45 transform hover:scale-[1.5] transition duration-300" >
+    <p class="font-[cursive] mt-[70px] bg-gradient-to-r from-[#C24E4E] via-pink-400 via-pink-400 to-[#C24E4E] text-transparent bg-clip-text transform animate-bounce ">click the pic to see what happens⸜(｡˃ ᵕ ˂ )⸝♡  </p>
+    
+</div>
+
+
+
+
+</div>
+</div>
+   
+
+
+<!-- modal 1 -->
+<div id="modal" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-2xl shadow-lg w-[700px] h-[200px] text-center relative shadow-[0_0_28px_4px_rgba(194,78,78,0.51)] border-dashed border-4 border-[rgba(233,162,174,0.693)]
+" >
+      <button id="closeModal" class="absolute top-2 right-3 text-gray-500 hover:text-black text-xl">
+        ×
+      </button>
+      
+      <div class="flex  justify-center items-center">
+        <img src="heart1.jpg" class="w-[100px] h-[100px] mt-5   ">
+        <p class="flex justify-center items-center font-[cursive]  ">
+          This is the first pic where you and watoke are together,two of my most favorite things in the world so obviously this will be one of my most favorite pic of you and why it is a 10/10❤️
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 2 -->
+<div id="modal2" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-2xl shadow-lg w-[700px] h-[200px] text-center relative shadow-[0_0_28px_4px_rgba(194,78,78,0.51)] border-dashed border-4 border-[rgba(233,162,174,0.693)]
+" >
+      <button id="closeModal2" class="absolute top-2 right-3 text-gray-500 hover:text-black text-xl">
+        ×
+      </button>
+      
+      <div class="flex  justify-center items-center">
+        <img src="heart2.jpg" class="w-[100px] h-[100px] mt-5   ">
+        <p class="flex justify-center items-center font-[cursive]  ">
+          This is also your first and only pic with a puppy and I just think you look so precious and cute while holding the cute little things, so a 10/10❤️ 
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 3 -->
+<div id="modal3" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-2xl shadow-lg w-[700px] h-[200px] text-center relative shadow-[0_0_28px_4px_rgba(194,78,78,0.51)] border-dashed border-4 border-[rgba(233,162,174,0.693)]
+" >
+      <button id="closeModal3" class="absolute top-2 right-3 text-gray-500 hover:text-black text-xl">
+        ×
+      </button>
+      
+      <div class="flex  justify-center items-center">
+        <img src="heart3.jpg" class="w-[100px] h-[100px] mt-5   ">
+        <p class="flex justify-center items-center font-[cursive]  ">
+          I just really love seeing you in that outfit,the sweater makes you look so gentleman-like completed with your signature smile that's why this pic is 10/10 ❤️
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 4 -->
+<div id="modal4" class="hidden fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-2xl shadow-lg w-[700px] h-[200px] text-center relative shadow-[0_0_28px_4px_rgba(194,78,78,0.51)] border-dashed border-4 border-[rgba(233,162,174,0.693)]
+" >
+      <button id="closeModal4" class="absolute top-2 right-3 text-gray-500 hover:text-black text-xl">
+        ×
+      </button>
+      
+      <div class="flex  justify-center items-center">
+        <img src="heart4.jpg" class="w-[100px] h-[100px] mt-5   ">
+        <p class="flex justify-center items-center font-[cursive]  ">
+          The all-black outfit makes you look really sexy eventhough that wasn't the only all-black you wore,that specific style really made me feel crazy so this is a 10/10 too❤️
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <!-- script 1 -->
+  <script>
+    const img = document.getElementById("pic1");
+    const modal = document.getElementById("modal");
+    const closeBtn = document.getElementById("closeModal");
+
+    // Open modal
+    img.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+
+    // Close modal when clicking the "×" button
+    closeBtn.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    // Close modal when clicking outside the box
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+
+
+    // script 2
+
+    const img2 = document.getElementById("pic2");
+    const modal2 = document.getElementById("modal2");
+    const closeBtn2 = document.getElementById("closeModal2");
+
+    // Open modal
+    img2.addEventListener("click", () => {
+      modal2.classList.remove("hidden");
+    });
+
+    // Close modal when clicking the "×" button
+    closeBtn2.addEventListener("click", () => {
+      modal2.classList.add("hidden");
+    });
+
+    // Close modal when clicking outside the box
+    modal2.addEventListener("click", (e) => 
+    {
+      if (e.target === modal2) {
+        modal2.classList.add("hidden");
+      }
+    });
+
+
+    //script 3
+
+    const img3 = document.getElementById("pic3");
+    const modal3 = document.getElementById("modal3");
+    const closeBtn3 = document.getElementById("closeModal3");
+
+    // Open modal
+    img3.addEventListener("click", () => {
+      modal3.classList.remove("hidden");
+    });
+
+    // Close modal when clicking the "×" button
+    closeBtn3.addEventListener("click", () => {
+      modal3.classList.add("hidden");
+    });
+
+    // Close modal when clicking outside the box
+    modal3.addEventListener("click", (e) => {
+      if (e.target === modal3) {
+        modal3.classList.add("hidden");
+      }
+    });
+
+
+    //script 4
+
+    const img4 = document.getElementById("pic4");
+    const modal4 = document.getElementById("modal4");
+    const closeBtn4 = document.getElementById("closeModal4");
+
+    // Open modal
+    img4.addEventListener("click", () => {
+      modal4.classList.remove("hidden");
+    });
+
+    // Close modal when clicking the "×" button
+    closeBtn4.addEventListener("click", () => {
+      modal4.classList.add("hidden");
+    });
+
+    // Close modal when clicking outside the box
+    modal4.addEventListener("click", (e) => {
+      if (e.target === modal4) {
+        modal4.classList.add("hidden");
+      }
+    });
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Image Modal Example</title>
+</head>
+<body class="flex items-center justify-center h-screen bg-gray-100">
+
+  <!-- The image -->
+  <img id="pic1" src="babe1.jpg" alt="Example" class="cursor-pointer rounded shadow-md" />
+
+  <!-- The modal (hidden by default) -->
+  <div id="modal"
+       class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-2xl shadow-lg w-[300px] text-center relative">
+      <button id="closeModal"
+              class="absolute top-2 right-3 text-gray-500 hover:text-black text-xl">
+        ×
+      </button>
+      <h2 class="text-xl font-semibold mb-4">Hello!</h2>
+      <p>This is your centered popup modal.</p>
+    </div>
+  </div>
+
+  <script>
+    const img = document.getElementById("pic1");
+    const modal = document.getElementById("modal");
+    const closeBtn = document.getElementById("closeModal");
+
+    // Open modal
+    img.addEventListener("click", () => {
+      modal.classList.remove("hidden");
+    });
+
+    // Close modal when clicking the "×" button
+    closeBtn.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    // Close modal when clicking outside the box
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.add("hidden");
+      }
+    });
+  </script>
+
+</body>
+</html>
